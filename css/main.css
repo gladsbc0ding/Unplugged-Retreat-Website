@@ -642,8 +642,10 @@ address p {
      }
 
      .hero-area h1 {
+          font-size: 3em;
           line-height: 1;
           margin: 0;
+
      }
 
  /* Aside styles */
@@ -659,6 +661,14 @@ address p {
      aside .content-wrapper .form {
           width: 40% ;
           margin: 0;
+     }
+
+     aside .form h3 {
+          padding-top: 0;
+     }
+
+     input[type=button] {
+          padding: 15px 0;
      }
 
 /* Features styles */
@@ -871,6 +881,8 @@ address p {
           font-size: 1.125em;
      }
 
+
+
      /* Features styles */
 
      .features h2 {
@@ -888,6 +900,10 @@ address p {
 
      .reviews h2 {
           padding-bottom: 50px;
+     }
+
+     .reviews p {
+          font-size: 1.125em;
      }
 
      /* Footer styles */
