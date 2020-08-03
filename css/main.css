@@ -103,6 +103,8 @@ body {
 ul,
 ol {
      list-style-type: none;
+     margin: 0;
+     padding: 0;
 }
 
 a {
@@ -161,7 +163,7 @@ footer {
 /* -----------------  Header styles ----------------------*/
 
 header {
-     padding: 15px 0;
+     padding: 10px 0;
 }
 
 header .content-wrapper {
@@ -182,7 +184,7 @@ header figure {
 
 .header-divider {
      height: 1px;
-     margin: 10px 0 20px 0;
+     margin: 10px 0 10px 0;
      width: 100%;
      background-color: #3a3a3a;
 }
@@ -196,6 +198,8 @@ header nav {
      font-size: 1.125em;
      font-weight: 700;
      text-transform: uppercase;
+     margin: 0;
+     padding-bottom: 5px;
 }
 
 header nav ul  {
@@ -206,9 +210,10 @@ header nav ul  {
 
 header nav ul li {
      font-size: 1.125em;
-     padding-left: 10px;
-     padding-right: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
 }
+
 /* ------------------  Footer styles ----------------------*/
 
 footer {
@@ -217,17 +222,21 @@ footer {
      color: #fff;
 }
 
-footer p  {
-     margin: 0;
-}
-
 footer .content-wrapper {
      width: 55%;
-     margin: 50px 0;
+     margin-bottom: 20px;
 }
 
-footer .contact {
-     margin-bottom: 50px;
+address h4 {
+     margin-top: 0;
+}
+
+address p {
+     margin-bottom: 40px;
+}
+
+footer .social {
+     margin-top: 50px;
 }
 
 footer .social-icons {
@@ -244,6 +253,7 @@ footer .social-icons p {
      border-radius: 50%;
      width: 40px;
      height: 40px;
+     margin-top: 0;
 }
 
 footer .social-icons p i {
@@ -251,7 +261,7 @@ footer .social-icons p i {
 }
 
 footer .copyright {
-     margin: 20px 0;
+     margin-bottom: 5px;
 }
 
 /* ======================================================================
@@ -266,7 +276,7 @@ footer .copyright {
      height: 500px;
      display: flex;
      justify-content: center;
-     align-items: center;
+     align-items: flex-start;
      flex-flow: row wrap;
 }
 
@@ -275,6 +285,7 @@ footer .copyright {
      font-size: 2.25em;
      font-weight: 500;
      line-height: 1.2;
+     margin-top: 0;
 }
 
 /* ----------------------  Aside styles ----------------------*/
@@ -288,8 +299,17 @@ aside {
      width: 100%;
 }
 
-aside .form {
-     margin-top: 30px;
+aside .content-wrapper {
+     margin-top: 20px;
+}
+
+aside h3 {
+     margin: 0;
+}
+
+aside .form h3 {
+     padding-bottom: 10px;
+     padding-top: 10px;
 }
 
 input[type=text] {
@@ -325,7 +345,9 @@ input[type=button] {
 }
 
 .features  h2 {
-     margin-bottom: 60px;
+     line-height: 1.2;
+     margin-bottom: 10px;
+     margin-top: 0;
 }
 
 .features .features-items {
@@ -347,7 +369,7 @@ input[type=button] {
 }
 
 .features i  {
-     font-size: 3.75em;
+     font-size: 4em;
      margin-bottom: 40px;
 }
 
@@ -362,6 +384,7 @@ input[type=button] {
 
 .reviews h2 {
      margin-bottom: 40px;
+     margin-top: 0;
      line-height: 1;
 }
 
@@ -380,6 +403,16 @@ input[type=button] {
      align-items: center;
      flex-flow: row wrap;
      background-color: #527158;
+}
+
+.mission .content-wrapper {
+     margin-bottom: 35px;
+}
+
+.mission h2 {
+     margin-bottom: 0;
+     margin-top: 0;
+     line-height: 1.2;
 }
 
 .map figure {
@@ -406,8 +439,22 @@ input[type=button] {
      background-color: #2a423a;
 }
 
-.contact-content p {
-     margin: 0;
+.contact-section .content-wrapper {
+     margin-bottom: 40px;
+}
+
+.contact-section h2 {
+     line-height: 1.2;
+     margin-top: 0;
+     margin-bottom: 10px;
+}
+
+.contact-section h4 {
+     margin-bottom: 10px;
+}
+address p {
+     margin-top: 10px;
+     margin-bottom: 15px;
 }
 
 /* =====================================================================
@@ -427,20 +474,20 @@ input[type=button] {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
-     margin: 50px 0 0 0;
 }
 
 .faq h2 {
-     margin-bottom: 40px;
+     margin-top: 0;
      line-height: 1;
 }
 
 .faq-content {
-     margin-bottom: 50px;
+     margin-bottom: 10px;
 }
 
 .faq-content h4 {
      line-height: 1.333;
+     margin-bottom: 0;
 }
 
 /* ======================================================================
@@ -540,6 +587,10 @@ input[type=button] {
           margin: 100px 0;
      }
 
+     h1 {
+          font-size: 3em;
+     }
+
      h2 {
           font-size: 2.25em;
           line-height: 1.333;
@@ -548,6 +599,10 @@ input[type=button] {
      h3 {
           font-size: 1.5em;
           line-height: 1.25;
+     }
+
+     p {
+          font-size: 1.125em;
      }
 
  /* Header styles */
@@ -568,10 +623,12 @@ input[type=button] {
 
      header nav {
           width: 20%;
+          margin-right: 40px;
      }
 
      header nav ul {
           justify-content: space-between;
+
      }
 
      .header-divider {
@@ -585,7 +642,6 @@ input[type=button] {
      }
 
      .hero-area h1 {
-          font-size: 3em;
           line-height: 1;
           margin: 0;
      }
@@ -644,6 +700,10 @@ input[type=button] {
           margin: 0;
      }
 
+     .reviews p {
+          font-size: .875em;
+     }
+
  /* Footer styles */
 
      footer .content-wrapper {
@@ -671,6 +731,14 @@ input[type=button] {
           line-height: 1.285;
      }
 
+     footer .social {
+          margin-top: 0;
+     }
+
+     footer .social h4 {
+          margin-top: 0;
+     }
+
      footer .social-icons {
           width: 12.5em;
           justify-content: space-between;
@@ -678,18 +746,26 @@ input[type=button] {
 
      footer .copyright {
           width: 100%;
-          /*text-align: center;*/
      }
 
      /*=================================================================
          About Page - Tablet Styles
         =================================================================*/
 
+        .mission-content .content-wrapper {
+             margin-top: 0;
+             width: 80%;
+        }
       .mission-content {
            display: flex;
            justify-content:space-between;
            align-items: center;
-           padding-top: 20px;
+           margin-top: 0;
+           margin-bottom: 50px;
+      }
+
+      .mission-content h2 {
+           margin-top: 0;
       }
 
       .mission-content p {
@@ -702,16 +778,19 @@ input[type=button] {
 
       .contact-section .content-wrapper h2 {
            width: 80%
+
       }
 
       .contact-content {
            display: flex;
            justify-content: space-between;
            align items: flex-start;
+           margin-bottom: 40px;
       }
 
       .contact-content h4 {
            font-size: 1.5em;
+           margin-top: 30px;
       }
 
       /*=================================================================
@@ -741,15 +820,19 @@ input[type=button] {
 @media only screen and (min-width: 1200px) {  /* Desktop styles here */
 
      header {
-          padding: 15px 0;
+          padding: 20px 0;
      }
 
      .content-wrapper {
           max-width: 960px;
      }
 
+     h1 {
+          font-size: 3.75em;
+     }
+
      h2 {
-          font-size: 2.25em;
+          font-size: 3em;
      }
 
      h3,
@@ -757,11 +840,20 @@ input[type=button] {
           font-size: 1.875em;
      }
 
-     /* Hero styles */
+     header nav {
+          margin-right: 0;
+     }
+
+          /* Hero styles */
+
+     .hero-area {
+          height: 600px;
+     }
 
      .hero-area  h1 {
-          font-size: 3.75em;
           width: 80%;
+          margin: 0;
+
      }
 
      /* Aside styles */
@@ -810,12 +902,15 @@ input[type=button] {
 
    .mission h2,
    .contact-section .content-wrapper h2 {
-        font-size: 3em;
         width: 95%;
    }
 
    .map figure {
         padding-bottom: 38%;
+   }
+
+   .contact-section .content-wrapper h2 {
+        width: 100%;
    }
 
    .contact-content h4 {
@@ -826,9 +921,17 @@ input[type=button] {
     FAQ Page - Desktop Styles
    =================================================================*/
 
+   .faq .content-wrapper {
+        margin-bottom: 70px;
+   }
    .faq h2 {
-        font-size:3em;
         width: 100%;
+        margin-bottom: 5px;
+   }
+
+   .faq-content {
+        margin-top: 0;
+        margin-bottom: 10px;
    }
 
    .faq h4,
