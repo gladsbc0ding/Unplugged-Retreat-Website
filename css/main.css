@@ -172,6 +172,7 @@ header .content-wrapper {
      align-items: center;
      flex-flow: row wrap;
      margin: 0;
+     width: 100%;
 }
 
 header figure {
@@ -779,7 +780,10 @@ address p {
       }
 
       .mission-content p {
+           font-size: .875em;
+           padding-top: 20px;
            width: 45%;
+
       }
 
       .map figure {
@@ -787,7 +791,7 @@ address p {
       }
 
       .contact-section .content-wrapper h2 {
-           width: 80%
+           width: 80%;
 
       }
 
@@ -915,19 +919,17 @@ address p {
 /*=================================================================
     About Page - Desktop Styles
    =================================================================*/
-
-   .mission h2,
-   .contact-section .content-wrapper h2 {
-        width: 95%;
+  .mission h2   {
+        width: 90%;
    }
 
    .map figure {
         padding-bottom: 38%;
    }
 
-   .contact-section .content-wrapper h2 {
-        width: 100%;
-   }
+  .contact-section .content-wrapper h2 {
+       width: 100%;
+ }
 
    .contact-content h4 {
         font-size: 1.875em;
